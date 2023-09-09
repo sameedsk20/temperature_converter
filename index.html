@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="images/sklogo.png" class="logo"></li>
+        </ul>
+    </nav>
+    <main>
+    <div class="container">
+        <h1 class="title">HeatShift</h1>
+        <div class="result">
+            <span class="resultHeading">
+                Converted Temperature
+            </span>
+            <h2 class="convertedValue" id="convertedValue">
+
+            </h2>
+        </div>
+
+        <div class="tempUnit">
+            <div class="valueField">
+                <label for="value">Temperature</label>
+                <input type="" name="degree" id="degree">
+            </div>
+
+            <div class="unitField">
+                <label for="unitType">Unit</label>
+                <select name="inputTempUnit" id="inputTempUnit" autocomplete="off">
+                    <option value="fahrenheit" id="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="celcius" id="celcius">Celsius (°C)</option>
+                    <option value="kelvin" id="kelvin">Kelvin (K)</option>
+                    <option value="rankine" id="rankine">Rankine (°R)</option>
+                </select>
+            </div>  
+        </div>   
+
+            <label for="convertUnit">Convert to</label>
+                <select name="outputTempUnit" id="outputTempUnit" autocomplete="off">
+                    <option value="fahrenheit" id="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="celcius" id="celcius">Celsius (°C)</option>
+                    <option value="kelvin" id="kelvin">Kelvin (K)</option>
+                    <option value="rankine" id="rankinea">Rankine (°R)</option>
+                </select>
+                
+        <div class="button">
+            <button id="convertButton">TempConvert</button>
+        </div>
+    </div>
+    </main>
+    
+<script src="script.js"></script>
+</body>
+</html>
